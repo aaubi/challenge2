@@ -1,0 +1,14 @@
+@media only screen and (max-width: 768px){
+	.menu__list__item{
+    display: none;
+}
+}
+@media only screen and (min-width: 769px) {
+    .menu__list__item{
+    font-family: Raleway;
+    font-style: normal;
+   	font-size: 16px;
+   	line-height: 19px;
+   	flex-grow: 0;
+}
+}

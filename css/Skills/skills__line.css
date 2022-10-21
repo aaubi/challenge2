@@ -1,0 +1,23 @@
+.skills__line{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   flex-direction: row;
+   min-width: 750px;
+   background: #BDBDBD;
+   margin: 0 auto;
+   max-width: 1119.25px;
+}
+
+@media only screen and (max-width: 768px) {
+.skills__line{
+   display: flex;
+   
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: normal;
+   background: #BDBDBD;
+   margin: 0 auto;
+   max-width: 1119.25px;
+}
+}

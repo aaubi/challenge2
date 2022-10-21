@@ -1,0 +1,27 @@
+.experience{
+	max-width: 1119.25px;
+	margin: 0 AUTO;
+	
+	
+}
+
+.experience__box{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 10px;
+	background: #BDBDBD;
+	align-items: center;
+		
+}
+  
+@media only screen and (max-width: 768px) {
+
+.experiencie__box{
+	background: #F7F9F9;
+	height: 120px;
+	margin: 5px;
+	width: 40%;
+	display: flex;
+	
+}	
+}
