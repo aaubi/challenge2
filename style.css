@@ -1,9 +1,3 @@
-/*CSS Reset / Normalize*/
-/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
-en las secciones señaladas */
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
-
 :root{
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
@@ -434,7 +428,6 @@ https://en.bem.info/methodology/quick-start/*/
     align-items: center;
     padding: 12px 16px;
     border: 1px solid #2A7AE4;
-    width: 100px;
     height: 40px;
 }   
 
@@ -455,7 +448,6 @@ https://en.bem.info/methodology/quick-start/*/
     justify-content: center;
     align-items: center;
     padding: 12px 16px;
-    width: 100px;
     height: 40px;
 }   
 
@@ -467,8 +459,8 @@ https://en.bem.info/methodology/quick-start/*/
     line-height: 16px;
     height: 40px;
     width: 100px;
-    margin-left: 50px;
-    background: #2A7AE4;;
+    margin-left: 10px;
+    background: #2A7AE4;
     color: #ffffff;
 }   
 
@@ -477,7 +469,7 @@ https://en.bem.info/methodology/quick-start/*/
     background: #BDBDBD;
     display: flex;
     flex-direction: column;  
-    background: #B2DFDB;
+    justify-content: center;
 }   
 
 .contacto__title{
@@ -514,8 +506,8 @@ https://en.bem.info/methodology/quick-start/*/
 
 .formcontato__form{
     display: flex;
-    margin: 18px 0;
     flex-direction: column;
+    padding-top: 20px;
 }   
 
 .formcontato__img{
@@ -715,6 +707,10 @@ Utiliza las referencias de los breakpoints @media abajo */
     flex-grow: 0;
 }
 
+.menu__list__item a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
 .menu__list__item__contacto {
         display: none;
 }
@@ -862,11 +858,11 @@ Utiliza las referencias de los breakpoints @media abajo */
     margin: 20px auto;
     max-width: 1256px;
 }
+
 .experience__section__title{
     text-align: center;
     margin: 20px auto;
     max-width: 1256px;
-
 }
 
 .experience__box{
@@ -877,12 +873,17 @@ Utiliza las referencias de los breakpoints @media abajo */
     max-width: 1256px;
     align-items: center;
     margin: 5px auto;
-    width: 100%;
-}   
+}
+
 .experience__img{
-    width: 100%;
+    width: 70%;
     margin-right: 10px;
 }   
+
+.experience__info{
+    width: 30%;
+}   
+   
 /*Contacto*/
 
 .contacto__title{
@@ -898,10 +899,25 @@ Utiliza las referencias de los breakpoints @media abajo */
     padding: 16px 0;
 }
 
+.formcontato{
+    padding: 16px;
+    background: #B2DFDB;
+}   
+
+.formcontato__contacto{
+    width: 60%;
+    display: flex;
+    flex-direction: row;  
+    margin: 0 auto;
+    
+}   
+
 .formcontato__text{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-left: 10px;
+    height: 100%;
 }
 .formcontato__form{
     display: flex;
@@ -915,26 +931,8 @@ Utiliza las referencias de los breakpoints @media abajo */
     height: 60px;
 }
 .formcontato__textarea{
-    margin: 15px 0 0 15px;
+    margin: 35px 0 35px 0;
     height: 80px;
-}
-
-.formcontato{
-    padding: 16px;
-    background: #BDBDBD;
-    display: flex;
-    flex-direction: row;  
-    background: #B2DFDB;
-}   
-
-.contacto__title{
-    height: 26px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 26px;
-    text-align: center;
 }
 
 .formcontato__text{
@@ -945,6 +943,7 @@ Utiliza las referencias de los breakpoints @media abajo */
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+    width: 60%;
 }   
 
 .formcontato__subtext{
@@ -959,14 +958,6 @@ Utiliza las referencias de los breakpoints @media abajo */
     color: #464646;
 }   
 
-.formcontato__form{
-    display: flex;
-    margin: 18px 0;
-    flex-direction: column;
-}   
-
-   
-
 .formcontato__input{
     background: #FFFFFF;
     border-radius: 4px;
@@ -974,6 +965,13 @@ Utiliza las referencias de los breakpoints @media abajo */
     height: 56px;
     margin: 20px 0;
 }
+
+.formcontato__img{
+    display: initial;
+    width: 40%;
+    height: 100%;
+    width: 100%;
+}  
 
 .formcontato__textarea{
     width: 100%;
@@ -1015,46 +1013,3 @@ Utiliza las referencias de los breakpoints @media abajo */
     color: #464646;
 }   
 
-//*
-.contacto__title{
-    text-align: center;
-    margin: 20px auto;
-    max-width: 1256px;
-    height: 58px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
-    padding: 16px 0;
-}
-
-.formcontato{
-    background: #B2DFDB;
-}
-.formcontato__contacto{
-    margin: 0 AUTO;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
-.formcontato__text{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.formcontato__form{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-}
-
-.formcontato__input{
-    margin: 35px 0 35px 15px;
-    height: 60px;
-}
-.formcontato__textarea{
-    margin: 15px 0 0 15px;
-    height: 80px;
-}
