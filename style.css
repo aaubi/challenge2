@@ -96,7 +96,7 @@ https://en.bem.info/methodology/quick-start/*/
     flex-direction: column;
     align-items: flex-start;
     margin: 0 auto;
-    height: 294px;
+    height: auto;
 }
 
 .title__profile{
@@ -111,7 +111,7 @@ https://en.bem.info/methodology/quick-start/*/
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 148px;      
+    height: auto;      
 }
 
 .title__bio{
@@ -120,7 +120,7 @@ https://en.bem.info/methodology/quick-start/*/
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-    height: 82px;
+    height: auto;
     text-align: justify;
     color: #464646; 
 }
@@ -129,7 +129,7 @@ https://en.bem.info/methodology/quick-start/*/
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    height: 98px;
+    height: auto;
     line-height: 16px;  
     text-align: justify; 
     color: #464646;   
@@ -346,10 +346,11 @@ https://en.bem.info/methodology/quick-start/*/
 }
 
 .academic__courses__item__img{
-   width: 100%;   
+   height: auto;
+   width: 100%; 
 }
 .academic__courses__item__title {
-   background: #B2DFDB;   
+   background: #B2DFDB; 
 }
 
 .academic__courses__item__subtitle {
@@ -466,7 +467,7 @@ https://en.bem.info/methodology/quick-start/*/
 
 .formcontato{
     padding: 16px;
-    background: #BDBDBD;
+    background: #B2DFDB;
     display: flex;
     flex-direction: column;  
     justify-content: center;
@@ -480,6 +481,7 @@ https://en.bem.info/methodology/quick-start/*/
     font-size: 22px;
     line-height: 26px;
     text-align: center;
+    background: red;
 }
 
 .formcontato__text{
@@ -614,8 +616,7 @@ Utiliza las referencias de los breakpoints @media abajo */
     display: inline-block;
     width: 100%;
     line-height: 31px;
-    height: 62px;
-
+    height: auto;
 }
 
 .title__subsection{
@@ -627,7 +628,7 @@ Utiliza las referencias de los breakpoints @media abajo */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 70%;
     height: 24px;
 }
 
@@ -755,8 +756,8 @@ Utiliza las referencias de los breakpoints @media abajo */
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
-    line-height: 61px;
-    height: 122px;
+    line-height: 41px;
+    height: auto;
     text-align: justify;
     color: #464646; 
 }
@@ -773,10 +774,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 .title__subsection{
     width: 100%;
-}
-
-.title__network {
-    max-width: 55%;
+    height: auto;
 }
 
 .title__network__item{
@@ -827,10 +825,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 }
 
 .hobbies__line{
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
-   flex-direction: row;
+    flex-wrap: nowrap;
    max-width: 1256px;
    background: #BDBDBD;
 }
@@ -838,7 +833,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 .hobbies__box{
     background: #F7F9F9;
     height: 150px;
-    width: 16%;
+    width: 25%;
     margin: 0 2px;
     display: flex;
     align-items: flex-start;
@@ -905,20 +900,11 @@ Utiliza las referencias de los breakpoints @media abajo */
 }   
 
 .formcontato__contacto{
-    width: 60%;
     display: flex;
     flex-direction: row;  
     margin: 0 auto;
-    
 }   
 
-.formcontato__text{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 10px;
-    height: 100%;
-}
 .formcontato__form{
     display: flex;
     flex-direction: column;
@@ -926,10 +912,6 @@ Utiliza las referencias de los breakpoints @media abajo */
     height: 100%;
 }
 
-.formcontato__input{
-    margin: 35px 0 35px 15px;
-    height: 60px;
-}
 .formcontato__textarea{
     margin: 35px 0 35px 0;
     height: 80px;
@@ -937,13 +919,14 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 .formcontato__text{
     display: flex;
+    padding-left: 10px;
     flex-direction: column;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    width: 60%;
+    width: 80%;
 }   
 
 .formcontato__subtext{
@@ -959,6 +942,8 @@ Utiliza las referencias de los breakpoints @media abajo */
 }   
 
 .formcontato__input{
+    margin: 35px 0 35px 15px;
+    height: 60px;
     background: #FFFFFF;
     border-radius: 4px;
     width: 100%;
@@ -968,7 +953,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 .formcontato__img{
     display: initial;
-    width: 40%;
+    width: 30%;
     height: 100%;
     width: 100%;
 }  
