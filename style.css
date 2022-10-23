@@ -38,7 +38,7 @@ https://en.bem.info/methodology/quick-start/*/
 
 .tudo{
     max-width: 425px;
-   
+   min-width: 322px;
 } 
 
 /*Sección Menu*/
@@ -94,9 +94,7 @@ https://en.bem.info/methodology/quick-start/*/
 .title__div{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     margin: 0 auto;
-    height: auto;
 }
 
 .title__profile{
@@ -107,20 +105,12 @@ https://en.bem.info/methodology/quick-start/*/
     
   }
 
-.title__container{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;      
-}
-
 .title__bio{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-    height: auto;
     text-align: justify;
     color: #464646; 
 }
@@ -129,7 +119,6 @@ https://en.bem.info/methodology/quick-start/*/
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    height: auto;
     line-height: 16px;  
     text-align: justify; 
     color: #464646;   
@@ -138,19 +127,18 @@ https://en.bem.info/methodology/quick-start/*/
 .title__network {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     justify-content: space-between;
-    width: 100%;
-    height: 16px;
+    width: 90%;
 }
 
 .title__network__item{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 16px;
 }
+
 /*Sobre Mi*/
 
 .about{
@@ -621,14 +609,13 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 .title__subsection{
     width: 100%;
-    height: 34px;
 }
 
 .title__network {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 70%;
+    width: 100%;
     height: 24px;
 }
 
@@ -636,7 +623,7 @@ Utiliza las referencias de los breakpoints @media abajo */
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 11px;
     line-height: 19px;
    
 }
@@ -646,25 +633,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 /*Skills*/
 
-.skills__box{
-    width: 32.7%;
-    justify-content: space-between;
-}
-
-.skills__box{
-    background: #F7F9F9;
-    height: 150px;
-    width: 24%;
-    margin: 2px;
-    display: flex;
-    align-items: flex-end;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding-left: 16px;
-    margin-bottom: 8px;
-}   
+   
 /*Hobbies*/
  
 /*Formación Académica*/
@@ -719,6 +688,8 @@ Utiliza las referencias de los breakpoints @media abajo */
 /*title*/
 
 .title{
+    max-width: 1256px;
+    padding: 16px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -766,7 +737,6 @@ Utiliza las referencias de los breakpoints @media abajo */
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
-    height: 98px;
     line-height: 26px;  
     text-align: justify; 
     color: #464646;   
@@ -783,14 +753,18 @@ Utiliza las referencias de los breakpoints @media abajo */
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    
 }
 
 /*Sobre Mi*/
 
+.about{
+    max-width: 1990px;
+}
+
 .about__container {
     margin: 0 auto;
     max-width: 1256px;
+    padding: 16px;
 }
 .about__paragraph p{
     max-width: 75%;
@@ -801,6 +775,13 @@ Utiliza las referencias de los breakpoints @media abajo */
 .skills{
     max-width: 1256px;
     margin: 0 auto;
+}
+
+.skills__box{
+    width: 24%;
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
 }
 
 /*Hobbies*/
@@ -814,13 +795,13 @@ Utiliza las referencias de los breakpoints @media abajo */
 .hobbies__title{
     max-width: 1256px;
     text-align: flex-start;
-    margin: 20px auto;
+    margin: 0 auto;
     height: 58px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
-    line-height: 38px;
+    line-height: 26px;
     padding: 16px 0;
 }
 
@@ -833,13 +814,18 @@ Utiliza las referencias de los breakpoints @media abajo */
 .hobbies__box{
     background: #F7F9F9;
     height: 150px;
-    width: 25%;
+    width: 24%;
     margin: 0 2px;
     display: flex;
     align-items: flex-start;
 }
 
 /*Formación Académica*/
+
+.academic__courses{
+    max-width: 1256px;
+    padding: 16px;
+}
 
 .academic__title{
     text-align: center;
